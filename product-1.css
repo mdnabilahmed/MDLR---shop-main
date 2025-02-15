@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.text1{
+   font-size: 22px;
+}
+
+.img{
+   height: 30px;
+   width: 30px;
+}
+
+body{
+   min-height: 100vh;
+   font-family: Kode Mono;
+}
+
+nav{
+   background-color: #fafafa;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   position: fixed;  
+   top: 0;
+   left: 0;
+   width: 100%;      
+   z-index: 1000;
+   border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+nav ul{
+   width: 100%;
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+nav li{
+   height: 80px;
+}
+
+nav a{
+   height: 100%;
+   padding: 0 20px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: black;
+   font-size: 22px;
+}
+
+nav a:hover{
+   color: rgba(0, 0, 0, 0.541);
+}
+
+nav li:first-child{
+   margin-right: auto;
+}
+
+.container {
+    display: flex;
+    margin: 60px -20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.image-section {
+    flex: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+.image-section img {
+    width: auto;
+    height: 100vh;
+}
+
+.details-section {
+    flex: 1;
+    padding: 15vw 5vh;
+}
+
+.product-title {
+    font-size: 4.5vh;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 3vh;
+    margin: 25px 0;
+}
+
+.description {
+    font-size: 1.3vh;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.select-box{
+   border: none;
+   border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .image-section {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .details-section {
+        padding: 20px;
+    }
+
+    .product-title {
+        font-size: 3.5vh;
+    }
+
+    .price {
+        font-size: 2.5vh;
+    }
+
+    .description {
+        font-size: 1.5vh;
+    }
+
+    .button {
+        width: 14vw;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .details-section {
+        padding: 15px;
+    }
+
+    .product-title {
+        font-size: 3vh;
+    }
+
+    .price {
+        font-size: 2vh;
+    }
+
+    .description {
+        font-size: 1.2vh;
+    }
+
+    .button {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+.select-box, .quantity {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.button {
+    font-family:  Kode Mono;
+    font-size: 1.3vh;
+    background-color: black;
+    color: #fafafa;
+    padding: 1vh;
+    border: none;
+    cursor: pointer;
+    max-width: 20vw;
+    height: 4vh;
+}
+
+footer {
+   background-color: #fafafa;
+   padding: 0 20px;
+   text-align: center;
+   position: relative;
+   top: 60px;
+}
+
+/* Subscribe Section */
+.subscribe-container {
+   margin: auto;
+   padding-bottom: 70px;
+   border-bottom: 1px solid #ddd;
+}
+
+.subscribe-container h1 {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 60px;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin: auto;
+   align-items: center;
+   gap: 20px;
+}
+
+/* Input Field Styling */
+.subscribe-form .input-group {
+   flex: 1; 
+   position: relative;
+}
+
+.subscribe-form input {
+   width: 100%; /* Full width of the input group */
+   padding: 12px 0;
+   border: none;
+   border-bottom: 2px solid #ccc; /* Increased border width */
+   outline: none;
+   font-size: 16px;
+   color: #aaa;
+   background-color: transparent;
+   transition: all 0.3s ease-in-out;
+   opacity: 0.6;
+}
+
+.subscribe-form input:focus {
+   opacity: 1;
+   border-bottom: 2px solid black; /* Increased border width */
+}
+
+/* Subscribe Button */
+.subscribe-form button {
+   background-color: rgba(0, 0, 0, 0.781);
+   color: white;
+   border: none;
+   padding: 18px 35px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background 0.3s ease-in-out;
+}
+
+.subscribe-form button:hover {
+   background-color: #333;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 50px auto 0;
+   padding-top: 30px;
+   position: relative;
+   bottom: 35px;
+}
+
+.logo {
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.footer-links {
+   display: flex;
+   gap: 25px;
+}
+
+.footer-links a {
+   text-decoration: none;
+   color: black;
+   font-size: 19px;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0.8;
+}
+
+.footer-links a:hover {
+   opacity: 1;
+}
+
+/* Social Icons */
+.social-icons {
+   display: flex;
+   gap: 15px;
+}
+
+.social-icons a {
+   font-family: 'FontAwesome';
+   text-decoration: none;
+   font-size: 25px;
+   color: black;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0.8;
+}
+
+.social-icons a:hover {
+   opacity: 1;
+}

@@ -1,26 +1,27 @@
+/* Base styles */
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-*{
+* {
    margin: 0;
    padding: 0;
 }
 
-.text1{
+.text1 {
    font-size: 22px;
 }
 
-.img{
+.img {
    height: 30px;
    width: 30px;
 }
 
-body{
+body {
    min-height: 100vh;
    font-family: Kode Mono;
 }
 
-nav{
+nav {
    background-color: white;
    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.1);
    position: fixed;  
@@ -28,7 +29,7 @@ nav{
    z-index: 1000;
 }
 
-nav ul{
+nav ul {
    width: 100%;
    list-style: none;
    display: flex;
@@ -36,12 +37,11 @@ nav ul{
    align-items: center;
 }
 
-nav li{
+nav li {
    height: 80px;
-
 }
 
-nav a{
+nav a {
    height: 100%;
    padding: 0 20px;
    text-decoration: none;
@@ -51,15 +51,15 @@ nav a{
    font-size: 22px;
 }
 
-nav a:hover{
+nav a:hover {
    color: rgba(0, 0, 0, 0.541);
 }
 
-nav li:first-child{
+nav li:first-child {
    margin-right: auto;
 }
 
-.hero_home{
+.hero_home {
    height: 75vh;
    border: 1px solid rgba(105, 104, 104, 0.267);
    display: flex;
@@ -68,31 +68,30 @@ nav li:first-child{
    background-color: #fafafa;
 }
 
-.hero_text{
+.hero_text {
    padding-left: 70px;
-
-   h3, h1{
-   font-weight: bolder;
-   }
-
-   h1{
-      margin-bottom: 25px;
-      font-size: 6.5vw;
-      line-height: 1em;
-      letter-spacing: -2px;
-      /* margin: .67em 0; */
-   }
-
-   h3{
-      font-size: 2.5vw;
-   }
-
-   p{
-      font-size: 1.7vh;
-   }
 }
 
-.see_button{
+.hero_text h3, .hero_text h1 {
+   font-weight: bolder;
+}
+
+.hero_text h1 {
+   margin-bottom: 25px;
+   font-size: 6.5vw;
+   line-height: 1em;
+   letter-spacing: -2px;
+}
+
+.hero_text h3 {
+   font-size: 2.5vw;
+}
+
+.hero_text p {
+   font-size: 1.7vh;
+}
+
+.see_button {
    height: 44px;
    width: 160px;
    display: flex;
@@ -102,7 +101,7 @@ nav li:first-child{
    margin-top: 30px;
 }
 
-.hero_photo{
+.hero_photo {
    background-image: url(big_picture.jpg);
    width: 75vw;
    height: 100%;
@@ -111,29 +110,21 @@ nav li:first-child{
    border-left: 1px solid #dfdfe2;
 }
 
-.about_modular{
-
-   .about1{
-      margin-top: 30px;
-      margin-bottom: 40px;
-      font-size: 4vh;
-   }
-
-   p{
-      font-size: 1.5vh;
-   }
-   
+.about_modular {
    padding: 40px 16% 60px;
    background-color: #fafafa;
    text-align: center;
 }
 
+.about_modular .about1 {
+   margin-top: 30px;
+   margin-bottom: 40px;
+   font-size: 4vh;
+}
 
-
-
-
-
-
+.about_modular p {
+   font-size: 1.5vh;
+}
 
 .product-grid {
    display: flex;
@@ -167,6 +158,7 @@ nav li:first-child{
    font-size: 20px;
    margin: 15px 0;
    margin-left: 10px;
+   color: black;
 }
 
 .price {
@@ -185,13 +177,6 @@ nav li:first-child{
    margin-left: 5px;
 }
 
-
-
-
-
-
-
-/* Footer Styling */
 footer {
    background-color: white;
    padding: 0 20px;
@@ -200,7 +185,6 @@ footer {
    top: 60px;
 }
 
-/* Subscribe Section */
 .subscribe-container {
    margin: auto;
    padding-bottom: 70px;
@@ -213,7 +197,6 @@ footer {
    margin-bottom: 60px;
 }
 
-/* Subscribe Form */
 .subscribe-form {
    display: flex;
    justify-content: space-between;
@@ -223,17 +206,16 @@ footer {
    gap: 20px;
 }
 
-/* Input Field Styling */
 .subscribe-form .input-group {
    flex: 1; 
    position: relative;
 }
 
 .subscribe-form input {
-   width: 100%; /* Full width of the input group */
+   width: 100%; 
    padding: 12px 0;
    border: none;
-   border-bottom: 2px solid #ccc; /* Increased border width */
+   border-bottom: 2px solid #ccc; 
    outline: none;
    font-size: 16px;
    color: #aaa;
@@ -244,10 +226,9 @@ footer {
 
 .subscribe-form input:focus {
    opacity: 1;
-   border-bottom: 2px solid black; /* Increased border width */
+   border-bottom: 2px solid black; 
 }
 
-/* Subscribe Button */
 .subscribe-form button {
    background-color: rgba(0, 0, 0, 0.781);
    color: white;
@@ -262,7 +243,6 @@ footer {
    background-color: #333;
 }
 
-/* Footer Bottom */
 .footer-bottom {
    display: flex;
    justify-content: space-between;
@@ -295,7 +275,6 @@ footer {
    opacity: 1;
 }
 
-/* Social Icons */
 .social-icons {
    display: flex;
    gap: 15px;
@@ -312,4 +291,126 @@ footer {
 
 .social-icons a:hover {
    opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+   .hero_text h1 {
+      font-size: 8vw;
+   }
+
+   .hero_text h3 {
+      font-size: 3.5vw;
+   }
+
+   .hero_text p {
+      font-size: 2vh;
+   }
+
+   .product-card {
+      width: 45vw;
+   }
+}
+
+@media (max-width: 768px) {
+   nav ul {
+      flex-direction: row;
+      align-items:space-between;
+      gap: 20px;
+   }
+
+   nav a {
+      padding: 0 0;
+      font-size: 18px;
+   }
+
+   .hero_home {
+      flex-direction: column;
+      height: auto;
+   }
+
+   .hero_text {
+      padding-left: 20px;
+      text-align: center;
+   }
+
+   .hero_text h1 {
+      font-size: 10vw;
+      margin-top: 60px;
+   }
+
+   .hero_text h3 {
+      font-size: 4vw;
+   }
+
+   .hero_text p {
+      font-size: 2.5vh;
+   }
+
+   .see_button {
+      position: relative;
+      left: 300px;
+      margin-bottom: 30px;
+   }
+
+   .hero_photo {
+      width: 100%;
+      height: 50vh;
+   }
+
+   .about_modular {
+      padding: 20px 5%;
+   }
+
+   .product-card {
+      width: 90vw;
+   }
+
+   .subscribe-form {
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .subscribe-form button {
+      width: 100%;
+   }
+
+   .footer-bottom {
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   nav a {
+      font-size: 16px;
+   }
+
+   .hero_text h1 {
+      font-size: 12vw;
+   }
+
+   .hero_text h3 {
+      font-size: 5vw;
+   }
+
+   .hero_text p {
+      font-size: 2vh;
+   }
+
+   .see_button {
+      width: 100%;
+   }
+
+   .product-card {
+      width: 100%;
+   }
+
+   .footer-links a {
+      font-size: 16px;
+   }
+
+   .social-icons a {
+      font-size: 20px;
+   }
 }
